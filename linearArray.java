@@ -1,5 +1,5 @@
 import java.util.*;
-public class day1{
+public class linearArray{
     public static int linearSearch(int number[],int key){
         for(int i=0;i<number.length;i++){
             if(number[i]==key){
