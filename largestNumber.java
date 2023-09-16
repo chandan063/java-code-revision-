@@ -15,6 +15,6 @@ public class largestNumber {
         int large=Integer.MAX_VALUE;//signify minus infinity inside java
         int largestNumber= big(number,large);
         System.out.println("biggest value in arrray is:"+largestNumber);
-
+        
     }
 }
