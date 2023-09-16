@@ -11,8 +11,8 @@ public class day1{
 
     public static void main(String[] args){
         int number[]={22,33,45,65,12,1,33};
-        // int key=65;
-        int key1=99;
+        // int key=65; //for the value that exists
+        int key1=99; //for value that does't exits
         int index=linearSearch(number,key1);
         if(index==-1){
             System.out.println("Not Found");
