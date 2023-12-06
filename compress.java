@@ -23,7 +23,7 @@ public class Program
         // compress(str);
 	}
 }
-
+// the TC=O(N^2)
 
 // USING STRINGBUILDER
 
@@ -49,3 +49,4 @@ public class Program
         System.out.println(compress(str));
 	}
 }
+// HERE TC=O(N);ONLY
