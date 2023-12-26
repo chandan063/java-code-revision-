@@ -14,6 +14,7 @@ public class Program
             }
         }
         return sum;
+	    //time-complexity=O(n^2);
     }
     public static int diagSum(int matrix[][]){
         int sum=0;
@@ -26,6 +27,7 @@ public class Program
             }
         }
         return sum;
+	    // time-complexity=O(n);
     }
    
    public static void prints(int ar[][]){
