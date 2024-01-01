@@ -29,12 +29,22 @@ class student{
     int marks[];
 
     //for copying we create a constructor 
-    //copy construtor
+    //shallow copy construtor - the updated marks will be shown in s2.
+
+    // student(student s1){
+    //     marks=new int[3];
+    //     this.name=s1.name;
+    //     this.roll=s1.roll;
+    //     this.marks=s1.marks;
+    // }
+    //DeepCopy Constructor--value will be not updated . whatever copied before we show in s2.
     student(student s1){
         marks=new int[3];
         this.name=s1.name;
         this.roll=s1.roll;
-        this.marks=s1.marks;
+        for(int i=0;i<marks.length;i++){
+            this.marks[i]=s1.marks[i];
+        }
     }
 
     student(){
