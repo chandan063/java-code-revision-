@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Demo5 {
+public class Demo6 {
 
     public static int StoreWater(ArrayList<Integer> height){
         int maxWater=0;
