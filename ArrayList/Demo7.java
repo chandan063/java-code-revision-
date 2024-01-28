@@ -16,21 +16,23 @@ public class Demo7{
     }
 //    using 2pointer approach
     public static boolean pairsSum(ArrayList<Integer> list,int target){
-        boolean result=false;
         int lp=0,rp=list.size()-1;
-        while(lp<rp){
-            int currTotal=list.get(lp)+list.get(rp);
-            if(currTotal==target){
-                result=true;
+        while (lp!=rp) {
+//            case-1
+            int currTotal = list.get(lp) + list.get(rp);
+            if (currTotal == target) {
+                return true;
             }
-            if(list.get(lp)<list.get(rp)){
+//            case-2
+            if (currTotal < target) {
                 lp++;
-            } else{
+            }
+//            case-3
+            else {
                 rp--;
             }
-
         }
-        return result;
+        return false;
     }
     public static void main(String []args){
         ArrayList<Integer> a=new ArrayList<>();
