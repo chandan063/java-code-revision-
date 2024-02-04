@@ -51,17 +51,32 @@ class LL1{
         }
         System.out.println("null");
     }
+
+    public void add(int idx,int data){
+        Node newNode=new Node(data);
+        Node temp=head;
+        int i=0;
+
+        while(i<idx-1){
+            temp=temp.next;
+            i++;
+        }
+        //i=idx-1;temp->prev
+        newNode.next=temp.next;
+        temp.next=newNode;
+    }
     public static void main(String []args){
     LL1 linkedList=new LL1();
-    linkedList.print();
+//    linkedList.print();
     linkedList.addFirst(2);
-        linkedList.print();
+//        linkedList.print();
     linkedList.addFirst(1);
-        linkedList.print();
+//        linkedList.print();
     linkedList.addLast(3);
-        linkedList.print();
+//        linkedList.print();
     linkedList.addLast(4);
-        linkedList.print();
-
+//        linkedList.print();
+   linkedList.add(2,9);
+   linkedList.print();
     }
 }
