@@ -1,4 +1,4 @@
-public class Program
+class Program
 {
     public static void update(int arr[]){
         for(int i=0;i<arr.length;i++){

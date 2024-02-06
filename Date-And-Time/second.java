@@ -14,6 +14,6 @@ class second{
         System.out.println(d.getTime()+" time in  miliseconds");
         System.out.println("Date is : "+d.getDate());
         System.out.println("Day is : "+d.getDay());//it will give day of the week like mon-1,tue-2
-        System.out.println(d.getYear()+1900);//method will give only yeat after 1900 so get exact year we have to add 1900
+        System.out.println(d.getYear()+1900);//method will give only yeat after 1900 so get exact year we have to add 1900T
     }
 }
